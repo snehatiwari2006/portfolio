@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Sneha Tiwari, Computer Science Engineering student and front-end developer at UIT RGPV, Bhopal.">
+  <title>Sneha Tiwari | Front-End Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand" aria-label="Sneha Tiwari, back to top">ST<span>.</span></a>
+      <nav id="nav" class="nav" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+        <a href="#education">Education</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" type="button" aria-label="Switch to dark theme">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button id="menuToggle" class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Hello, I’m</p>
+        <h1>Sneha Tiwari</h1>
+        <p class="headline">Computer Science Engineering Student | Front-End Developer</p>
+        <p class="lead">I am a Computer Science Engineering student passionate about building clean, responsive and user-friendly web applications. I enjoy solving problems, learning new technologies and turning ideas into functional digital experiences.</p>
+        <div class="btn-row">
+          <a href="#projects" class="btn primary">View My Projects</a>
+          <!-- Put your resume PDF in this folder as "resume.pdf" -->
+          <a href="resume.pdf" class="btn outline" download>Download Resume</a>
+          <a href="#contact" class="btn ghost">Contact Me</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/snehatiwari2006" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg></a>
+          <a href="https://www.linkedin.com/in/sneha-tiwari-71a2ba375/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3zM9.5 9.75h3.8v1.57h.05c.53-1 1.82-2.07 3.75-2.07 4 0 4.75 2.63 4.75 6.05v5.95h-4v-5.28c0-1.26-.02-2.88-1.76-2.88-1.76 0-2.03 1.37-2.03 2.79v5.37h-4z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="code-window">
+          <div class="code-bar"><i></i><i></i><i></i><span>developer.js</span></div>
+<pre><code><span class="k">const</span> <span class="v">developer</span> = {
+  name: <span class="s">"Sneha Tiwari"</span>,
+  college: <span class="s">"UIT RGPV, Bhopal"</span>,
+  focus: [<span class="s">"Front-End"</span>, <span class="s">"Java"</span>, <span class="s">"DSA"</span>],
+  learning: [<span class="s">"React"</span>, <span class="s">"Node.js"</span>],
+  <span class="f">build</span>() {
+    <span class="k">return</span> <span class="s">"clean, responsive apps"</span>;
+  }
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <div class="section-head reveal"><p class="eyebrow">About</p><h2>About Me</h2></div>
+      <div class="about-grid">
+        <p class="reveal">I am a second-year Computer Science Engineering student at UIT RGPV, Bhopal. I am interested in front-end development and software development, and I enjoy building practical web applications that solve real problems.</p>
+        <ul class="check-list reveal">
+          <li>Second-year CSE student at UIT RGPV, Bhopal</li>
+          <li>Interested in Front-End Development and Software Development</li>
+          <li>Passionate about Java, Data Structures and Algorithms</li>
+          <li>Currently improving React and Node.js skills</li>
+          <li>Interested in building practical web applications</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <div class="section-head reveal"><p class="eyebrow">Skills</p><h2>Tools &amp; Technologies</h2></div>
+        <div class="skill-grid">
+          <article class="card reveal"><h3>Programming</h3><ul class="badges"><li>Java</li><li>JavaScript</li></ul></article>
+          <article class="card reveal"><h3>Web Development</h3><ul class="badges"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Tailwind CSS</li><li class="learning">React (Learning)</li><li class="learning">Node.js (Learning)</li></ul></article>
+          <article class="card reveal"><h3>Tools</h3><ul class="badges"><li>Git</li><li>GitHub</li><li>VS Code</li></ul></article>
+          <article class="card reveal"><h3>DSA</h3><ul class="badges"><li>Data Structures and Algorithms</li><li>Problem Solving</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <div class="section-head reveal"><p class="eyebrow">Projects</p><h2>Selected Projects</h2></div>
+      <div class="project-list">
+
+        <!-- Project 1 -->
+        <article class="project card reveal">
+          <div class="shot">
+            <div class="shot-fallback mini-site" aria-hidden="true"><b></b><i></i><i></i><i></i></div>
+          </div>
+          <div class="project-body">
+            <h3>Personal Portfolio Website</h3>
+            <p>A responsive personal portfolio website showcasing my skills, projects and achievements.</p>
+            <ul class="badges small"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <div class="btn-row">
+              <!-- TODO: replace "#" with your live URL and repository URL -->
+              <a href="#" class="btn primary sm" data-placeholder="Live Demo">Live Demo</a>
+              <a href="#" class="btn outline sm" data-placeholder="GitHub">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project card reveal">
+          <div class="shot">
+            <!-- Save your screenshot as images/currency-converter.png -->
+            <img src="images/currency-converter.png" alt="Currency Converter application screenshot" loading="lazy" width="800" height="500" onerror="this.remove()">
+            <div class="shot-fallback"><span>Add images/currency-converter.png</span></div>
+          </div>
+          <div class="project-body">
+            <h3>Currency Converter</h3>
+            <p>A currency conversion application that allows users to convert an amount between different currencies using exchange-rate data.</p>
+            <ul class="features"><li>Amount input</li><li>Source and target currency selection</li><li>Conversion result</li><li>API integration</li></ul>
+            <ul class="badges small"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Currency Exchange API</li></ul>
+            <div class="btn-row">
+              <a href="#" class="btn primary sm" data-placeholder="Live Demo">Live Demo</a>
+              <a href="#" class="btn outline sm" data-placeholder="GitHub">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project card reveal">
+          <div class="shot">
+            <!-- Save your screenshot as images/studydeck.png -->
+            <img src="images/studydeck.png" alt="StudyDeck dashboard screenshot" loading="lazy" width="800" height="500" onerror="this.remove()">
+            <div class="shot-fallback"><span>Add images/studydeck.png</span></div>
+          </div>
+          <div class="project-body">
+            <h3>StudyDeck – Student Task &amp; Deadline Manager</h3>
+            <p>A student productivity web application designed to organize academic tasks, track deadlines and monitor task completion.</p>
+            <ul class="features"><li>Add, edit and delete tasks</li><li>Set deadlines and priorities</li><li>Subject-wise task organization</li><li>Pending, completed and overdue task filters</li><li>Dashboard statistics</li><li>LocalStorage data persistence</li></ul>
+            <ul class="badges small"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>LocalStorage</li></ul>
+            <div class="btn-row">
+              <a href="#" class="btn primary sm" data-placeholder="Live Demo">Live Demo</a>
+              <a href="#" class="btn outline sm" data-placeholder="GitHub">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section alt">
+      <div class="container">
+        <div class="section-head reveal"><p class="eyebrow">Education</p><h2>Education</h2></div>
+        <article class="card edu reveal">
+          <h3>UIT RGPV, Bhopal</h3>
+          <p>Bachelor of Technology – Computer Science Engineering</p>
+          <span class="pill">Currently in Second Year</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section container">
+      <div class="section-head reveal"><p class="eyebrow">Achievements</p><h2>Achievements</h2></div>
+      <div class="ach-grid">
+        <article class="card reveal"><h3>Hack Energy 2.0</h3><p>HackGyanVerse – Finalist</p></article>
+        <article class="card reveal"><h3>Smart India Hackathon</h3><p>Participation / finalist experience</p></article>
+        <article class="card reveal"><h3>200+ Problems</h3><p>Solved on LeetCode</p></article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Contact</p><h2>Let’s Connect</h2>
+          <p class="muted">I’m open to internship opportunities and collaborations. Reach out through the form or any of these links.</p>
+          <ul class="contact-links">
+            <!-- TODO: replace with your real email -->
+            <li><span>Email</span><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+            <li><span>GitHub</span><a href="https://github.com/snehatiwari2006" target="_blank" rel="noopener noreferrer">github.com/snehatiwari2006</a></li>
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/sneha-tiwari-71a2ba375/" target="_blank" rel="noopener noreferrer">linkedin.com/in/sneha-tiwari</a></li>
+            <li><span>Codolio</span><a href="https://codolio.com/profile/Sneha04" target="_blank" rel="noopener noreferrer">codolio.com/profile/Sneha04</a></li>
+          </ul>
+        </div>
+        <form id="contactForm" class="card form reveal" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="nameErr">
+          <p class="err" id="nameErr" role="alert"></p>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="emailErr">
+          <p class="err" id="emailErr" role="alert"></p>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required aria-describedby="msgErr"></textarea>
+          <p class="err" id="msgErr" role="alert"></p>
+          <button class="btn primary" type="submit">Send Message</button>
+          <p id="formStatus" class="status" role="status"></p>
+          <p class="note">Note: this form needs an email service (such as Formspree or EmailJS) to actually send messages. See <code>script.js</code> to connect one.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container foot-wrap">
+      <div><strong>Sneha Tiwari</strong><p class="muted">Designed and built with passion.</p></div>
+      <div class="foot-links">
+        <a href="https://github.com/snehatiwari2006" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/sneha-tiwari-71a2ba375/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://codolio.com/profile/Sneha04" target="_blank" rel="noopener noreferrer">Codolio</a>
+      </div>
+      <p class="muted">&copy; <span id="year">2026</span> Sneha Tiwari. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
